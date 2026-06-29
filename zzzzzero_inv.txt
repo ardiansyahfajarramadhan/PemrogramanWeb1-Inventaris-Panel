@@ -1,0 +1,21 @@
+inventaris_panel/
+├── config/      	         
+│   └── database.php
+├── classes/	
+│   ├── Auth.php
+│   └── Barang.php
+├── actions/         	
+│   ├── auth_action.php
+│   └── barang_action.php
+├── components/      	
+│   ├── sidebar.php
+│   ├── topbar.php
+│   └── footer.php
+├── index.php	
+├── login.php	
+├── register.php	
+├── edit_laptop.php
+├── logout.php
+├── transaksi.php
+├── dashboard.php	
+└── master_barang.php
