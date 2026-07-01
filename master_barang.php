@@ -111,11 +111,11 @@ $semua_barang = $barangManager->getAll();
                             <label class="block text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-1">Kategori Utama</label>
                             <select id="select-kategori" name="kategori" required class="w-full text-xs border border-gray-200 rounded-lg px-3 py-2.5 focus:outline-none focus:border-slate-900 bg-gray-50/50">
                                 <option value="">-- Pilih Kategori Utama --</option>
-                                <option value="1. Consumer Electronics (Elektronik Konsumen)">1. Consumer Electronics</option>
-                                <option value="2. Home Appliances (Peralatan Rumah Tangga)">2. Home Appliances</option>
-                                <option value="3. Komponen, Periferal & Aksesori">3. Komponen, Periferal & Aksesori</option>
-                                <option value="4. Smart Home & IoT (Internet of Things)">4. Smart Home & IoT</option>
-                                <option value="5. Jasa & Layanan Pendukung">5. Jasa & Layanan Pendukung</option>
+                                <option value="Consumer Electronics (Elektronik Konsumen)">1. Consumer Electronics</option>
+                                <option value="Home Appliances (Peralatan Rumah Tangga)">2. Home Appliances</option>
+                                <option value="Komponen, Periferal & Aksesori">3. Komponen, Periferal & Aksesori</option>
+                                <option value="Smart Home & IoT (Internet of Things)">4. Smart Home & IoT</option>
+                                <option value="Jasa & Layanan Pendukung">5. Jasa & Layanan Pendukung</option>
                             </select>
                         </div>
 
