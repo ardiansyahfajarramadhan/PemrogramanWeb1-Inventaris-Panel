@@ -72,11 +72,11 @@ if (!$data_barang) {
                         <div>
                             <label class="block text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-1">Kategori Utama</label>
                             <select id="edit-kategori" name="kategori" required class="w-full text-xs border border-gray-200 rounded-lg px-3 py-2.5 focus:outline-none focus:border-slate-900 bg-gray-50/50">
-                                <option value="1. Consumer Electronics (Elektronik Konsumen)" <?php echo $data_barang['kategori'] == '1. Consumer Electronics (Elektronik Konsumen)' ? 'selected' : ''; ?>>1. Consumer Electronics</option>
-                                <option value="2. Home Appliances (Peralatan Rumah Tangga)" <?php echo $data_barang['kategori'] == '2. Home Appliances (Peralatan Rumah Tangga)' ? 'selected' : ''; ?>>2. Home Appliances</option>
-                                <option value="3. Komponen, Periferal & Aksesori" <?php echo $data_barang['kategori'] == '3. Komponen, Periferal & Aksesori' ? 'selected' : ''; ?>>3. Komponen, Periferal & Aksesori</option>
-                                <option value="4. Smart Home & IoT (Internet of Things)" <?php echo $data_barang['kategori'] == '4. Smart Home & IoT (Internet of Things)' ? 'selected' : ''; ?>>4. Smart Home & IoT</option>
-                                <option value="5. Jasa & Layanan Pendukung" <?php echo $data_barang['kategori'] == '5. Jasa & Layanan Pendukung' ? 'selected' : ''; ?>>5. Jasa & Layanan Pendukung</option>
+                                <option value="Consumer Electronics (Elektronik Konsumen)" <?php echo $data_barang['kategori'] == '1. Consumer Electronics (Elektronik Konsumen)' ? 'selected' : ''; ?>>1. Consumer Electronics</option>
+                                <option value="Home Appliances (Peralatan Rumah Tangga)" <?php echo $data_barang['kategori'] == '2. Home Appliances (Peralatan Rumah Tangga)' ? 'selected' : ''; ?>>2. Home Appliances</option>
+                                <option value="Komponen, Periferal & Aksesori" <?php echo $data_barang['kategori'] == '3. Komponen, Periferal & Aksesori' ? 'selected' : ''; ?>>3. Komponen, Periferal & Aksesori</option>
+                                <option value="Smart Home & IoT (Internet of Things)" <?php echo $data_barang['kategori'] == '4. Smart Home & IoT (Internet of Things)' ? 'selected' : ''; ?>>4. Smart Home & IoT</option>
+                                <option value="Jasa & Layanan Pendukung" <?php echo $data_barang['kategori'] == '5. Jasa & Layanan Pendukung' ? 'selected' : ''; ?>>5. Jasa & Layanan Pendukung</option>
                             </select>
                         </div>
 
