@@ -1,0 +1,39 @@
+-- 1. Hapus tabel barang lama agar strukturnya bersih kembali
+DROP TABLE IF EXISTS barang CASCADE;
+
+-- 2. Buat Ulang Tabel Barang dengan Klasifikasi Super Lengkap
+CREATE TABLE barang (
+    id SERIAL PRIMARY KEY,
+    kode_barang VARCHAR(20) UNIQUE NOT NULL,
+    nama_barang VARCHAR(150) NOT NULL,          -- Nama spesifik unit (Contoh: MacBook Pro M3, iPhone 15)
+    jenis_komoditas VARCHAR(100) NOT NULL,      -- Sub-Kategori (Contoh: Ponsel & Komunikasi, Peralatan Dapur)
+    kategori VARCHAR(100) NOT NULL,             -- Kategori Utama (Contoh: 1. Consumer Electronics)
+    merk VARCHAR(50) NOT NULL,                  -- Brand (Contoh: Google, Iphone, Xiaomi, Samsung, Asus, dll.)
+    stok INT NOT NULL DEFAULT 0,
+    harga NUMERIC(15, 2) NOT NULL,
+    foto_barang VARCHAR(255) DEFAULT 'default.jpg',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 3. Memasukkan Contoh Data (Seeders) Berdasarkan 5 Pilar Klasifikasi Baru Anda
+INSERT INTO barang (kode_barang, nama_barang, jenis_komoditas, kategori, merk, stok, harga) VALUES
+
+-- 1. Consumer Electronics (Elektronik Konsumen)
+('CE-01', 'iPhone 15 Pro Max 512GB', 'Ponsel & Komunikasi', 'Consumer Electronics (Elektronik Konsumen)', 'Iphone', 150, 24500000.00),
+('CE-02', 'ASUS ROG Strix G16 Gaming', 'Komputer & Komputasi', 'Consumer Electronics (Elektronik Konsumen)', 'Asus', 45, 27000000.00),
+('CE-03', 'Sony Bravia 65" OLED Smart TV', 'Audio & Video', 'Consumer Electronics (Elektronik Konsumen)', 'Samsung', 20, 18500000.00),
+
+
+-- 2. Home Appliances (Peralatan Rumah Tangga)
+('HA-01', 'Samsung Inverter Smart Fridge', 'Peralatan Besar (Major Appliances)', 'Home Appliances (Peralatan Rumah Tangga)', 'Samsung', 35, 8900000.00),
+('HA-02', 'Philips Digital Air Fryer HD9252', 'Peralatan Dapur (Kitchen Appliances)', 'Home Appliances (Peralatan Rumah Tangga)', 'Panasonic', 80, 1600000.00),
+
+-- 3. Komponen, Periferal & Aksesori
+('KP-01', 'ASUS ROG Strix RTX 4070 Ti', 'Suku Cadang Komputer', 'Komponen, Periferal & Aksesori', 'Asus', 25, 14500000.00),
+('KP-02', 'Xiaomi 20000mAh Power Bank', 'Aksesori Gadget & PC', 'Komponen, Periferal & Aksesori', 'Xiaomi', 400, 350000.00),
+
+-- 4. Smart Home & IoT
+('SH-01', 'Xiaomi Smart Door Lock E10', 'Keamanan', 'Smart Home & IoT (Internet of Things)', 'Xiaomi', 50, 2100000.00),
+
+-- 5. Jasa & Layanan Pendukung
+('JS-01', 'Jasa Instalasi & Setting AC Rumah', 'Jasa Instalasi', 'Jasa & Layanan Pendukung', 'Panasonic', 999, 250000.00);
